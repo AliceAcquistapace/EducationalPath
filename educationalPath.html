@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generazione dinamica dei rettangoli</title>
+    <link rel="stylesheet" type="text/css" href="eduPath.css" />
+    <script src="eduPath.js"></script>
+    <script src="dragAndDrop.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="container1">
+      <div id="container" class="container"></div>
+      <div>
+        <p>RECOMMENDED EDUCATIONAL PATH</p>
+        <button id="toggleButton" onclick="toggleImage()">
+          Show/Hide image
+        </button>
+        <div id="imageContainer">
+          <img src="default.jpg" alt="Placeholder image" />
+          <button>Applica</button>
+        </div>
+
+        <div>
+          <p>INDICATE DEPENDENCIES BETWEEN LEARNING OBJECTS TO CREATE YOUR LEARNING PATHS -<i>drag the LO</i> </p>
+        </div>
+
+        <div id="containerR" class="container"></div>
+
+        <button id="confermaButton" style="display:none">Conferma</button>
+
+      </div>
+    </div>
+  </body>
+</html>

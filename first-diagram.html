@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My First Diagram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="page2.js"></script>
+    <style type="text/css">
+      .sidebar-left {
+        width: 300px;
+        height: calc(100vh - 50px);
+        overflow-y: scroll;
+      }
+
+      .main {
+        flex: 1 1 100%;
+        width: 80px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+      }
+
+      .container {
+        position: absolute;
+        display: flex;
+        top: 40px;
+        bottom: 10px;
+        left: 20px;
+        right: 0px;
+      }
+      #title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #container2 {
+        position: relative;
+      }
+      #buttonSave{
+        position: absolute;
+        left: 0px;
+        top:210px;
+        right: 0px;
+      }
+      #buttonLoad{
+        position: absolute;
+        left: 0px;
+        top:250px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="title">
+        <div id="h1"><h1>Create your Educational Path</h1></div>
+        <div id="h2"><h3>Here are the chosen LO</h3></div>
+      </div>
+
+      <div class="sidebar-left">
+        <canvas id="nodeList" width="50"></canvas>
+      </div>
+      <div class="main">
+        <canvas id="diagram" width="2100" height="2100"></canvas>
+      </div>
+      <!-- button -->
+      <div id="buttonSave">
+        <input type="button" value="Save" onClick="saveDiagram()">
+      </div>
+      <div id="buttonLoad">
+        <input type="button" value="Load" onClick="loadDiagram()">
+      </div>
+      
+
+    </div>
+
+    <script src="umd/collections.js" type="text/javascript"></script>
+    <script src="umd/drawing.js" type="text/javascript"></script>
+    <script src="umd/controls.js" type="text/javascript"></script>
+
+    <script src="umd/animations.js" type="text/javascript"></script>
+    <script src="umd/graphs.js" type="text/javascript"></script>
+    <script src="umd/diagramming.js" type="text/javascript"></script>
+    <script src="FirstDiagram.js" type="text/javascript"></script>
+  </body>
+</html>
